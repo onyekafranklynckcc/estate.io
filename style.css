@@ -69,6 +69,7 @@ html {
         top: 0px;
         transition: .5s ease;
         width: 100%;
+        z-index: 100;
         display: none;
         background-color:hsl(0, 0%, 00% / 0.75);
        backdrop-filter: blur(.5rem);
@@ -190,7 +191,7 @@ html {
     }
 
     .hero-section{
-        padding-top: 50px;
+        padding-top: 80px;
     }
     .hero-section img{
         display: flex;
@@ -255,10 +256,10 @@ html {
     padding: 20px 50px;
 }
 .search-section .search-area select{
-    padding: 5px 0;
-    border: none;
-    outline: none;
-    width: 80%;
+    padding: 8px 0;
+    border: 1px solid wheat;
+    width: 100%;
+    border-radius: 3px;
     margin-bottom: 3px;
 }
 .search-section .search-area input{
@@ -367,6 +368,14 @@ margin-left: 90px;
     margin-left: 40px;
     background-color: white;
 }
+.work-section .service-show{
+    padding: 20px 30px;
+    text-align: center;
+    border-radius: 0px 30px 0px 30px ;
+    margin: 10px;
+    margin-left: 40px;
+    background-color: white;
+}
 .services .service-show i{
     padding: 20px ;
     width: 61px;
@@ -417,7 +426,7 @@ border: none;
 .property-slider .swiper{
     width: 100%;
     height: 100%;
-    z-index: -1!important;
+   
     
   }
 .property-slider .swiper .swiper-slide .property-list{
@@ -642,7 +651,7 @@ letter-spacing: 2px;
 .formcont span{
     font-weight: bold;
     padding: 0 10px;
-    color:  rgb(210, 39, 144);
+    color:  rgb(255, 255, 255);
     cursor: pointer;
     width: 100px;
     display: inline-block;
@@ -668,8 +677,8 @@ letter-spacing: 2px;
     height: 30px;
     margin: 10px 0;
     padding: 20px 10px;
-    border: 1px solid  rgb(210, 39, 144);
-    border-radius: 30px;
+    border: 1px solid  rgb(255, 255, 255);
+    border-radius:15px 0px 15px 0px;
  }
  form .btn{
     width: 80%;
@@ -690,7 +699,7 @@ letter-spacing: 2px;
  #indicator{
     width: 100px;
     border: none;
-    background:  rgb(210, 39, 144);
+    background:  rgb(255, 255, 255);
     height: 3px;
     margin-top: 8px;
     transform: translateX(100px);
@@ -713,6 +722,11 @@ letter-spacing: 2px;
         display: none;
        
     } 
+    section{
+        padding-left: 0px;
+        padding-right: 0px;
+       margin: auto;
+    }
     .cover{
         object-fit:cover;
         width: 340px;
@@ -735,10 +749,12 @@ letter-spacing: 2px;
         padding: 20px 50px;
     }
     .search-section .search-area select{
-    margin-bottom: 3px;
+    margin-bottom: 10px;
+    border-radius:0px 15px 0px 15px;
     }
     .search-section .search-area input{
      margin-bottom: 10px;
+     border-radius:0px 15px 0px 15px;
     }
  
     .search-section .search-area button.btn-theme{
@@ -846,7 +862,8 @@ letter-spacing: 2px;
         display: none;
      }
     .form-cont{
-       
+       display: flex;
+       align-self: center;
         width: 300px;
         flex-wrap: wrap;
         height: 380px;
@@ -854,8 +871,8 @@ letter-spacing: 2px;
         left: 10%;
         top: 30%;
         background: rgba(0, 0, 0, .7);
-        z-index: 100000;
-        display: initial;
+        z-index: 10000;
+        display: none;
         text-align: center;
        align-items: center;
         padding: 30px 0px;
@@ -901,7 +918,7 @@ letter-spacing: 2px;
         margin: 10px 0;
         padding: 20px 10px;
         border: 1px solid  rgb(255, 255, 255);
-        border-radius: 30px;
+        border-radius:15px 0px 15px 0px;
      }
      .form-cont form input:focus{
         outline: none;
@@ -932,6 +949,7 @@ letter-spacing: 2px;
        backdrop-filter: blur(.5rem);
      transform: translateX();
      display: none;
+     z-index: 100;
 
 
      }

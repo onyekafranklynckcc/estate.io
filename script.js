@@ -3,6 +3,7 @@
 var faf = document.querySelector(".navbar-toggler");
 var blurr = document.querySelector(".blur");
 var form = document.querySelector(".formcont")
+var formm = document.querySelector(".form-cont")
 var remove = document.querySelector(".bg-blur")
 var removee = document.querySelector(".bg-blurr")
 faf.addEventListener("click", ()=>{
@@ -17,6 +18,13 @@ function openn(){
 
 function opennn(){
     removee.style.display =("initial")
+    formm.style.display = ("initial")
+    document.querySelector(".navbar-collapse").classList.remove("show");
+    faf.querySelector("i").classList.toggle("fa-bars");
+    faf.querySelector("i").classList.toggle("fa-times");
+    
+
+
     }
 
 
@@ -26,24 +34,22 @@ function opennn(){
         
     })
     removee.addEventListener("click", ()=>{
-        
+        formm.style.display = ("none")
         removee.style.display =("none")
         
     })
 
 
 
-    var log =document.getElementById("log")
-var reg =document.getElementById("reg")
-var indicator = document.getElementById("indicator")
-    var logg =document.getElementById("logg")
-var regg =document.getElementById("regg")
-var indicatorr = document.getElementById("indicatorr")
+var log =document.getElementById("log");
+var reg =document.getElementById("reg");
+var indicator = document.getElementById("indicator");
+    var logg =document.getElementById("logg");
+var regg =document.getElementById("regg");
+var indicatorr = document.getElementById("indicatorr");
 
 
-function open(){
-    form.style.display = "initial";
-    }
+
 
 
 
