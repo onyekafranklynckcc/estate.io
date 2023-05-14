@@ -14,14 +14,14 @@
 }
 
 @media screen and (max-width: 971px) {
-    .heads .content .choose_bx {
+    .heads .context .choose_bx {
         width: 95%;
     }
-    .heads .content .choose_bx .select .card:nth-child(3) .date h3 {
+    .heads .context .choose_bx .select .card:nth-child(3) .date h3 {
         width: 100px;
         font-size: 15px;
     }
-    .heads .content .choose_bx .select .card:nth-child(3) .date i {
+    .heads .context .choose_bx .select .card:nth-child(3) .date i {
         left: 77%;
     }
     .home {
@@ -49,16 +49,16 @@
     .heads {
         overflow: hidden;
     }
-    .heads .content .cont_bx h1 {
+    .heads .context .cont_bx h1 {
         color: #fff;
     }
-    .heads .content .cont_bx p {
+    .heads .context .cont_bx p {
         color: #fff;
     }
-    .heads .content .cont_bx .weather h6 {
+    .heads .context .cont_bx .weather h6 {
         color: #fff;
     }
-    .heads .content .cont_bx .btns_cont {
+    .heads   .cont_bx .btns_cont {
         color: #fff;
     }
     .heads .content .choose_bx .select {
@@ -107,6 +107,13 @@
 }
 
 @media screen and (max-width: 541px) {
+  .piece{
+    margin-left: 20px;
+    margin-top: 20px;
+  }  
+  .title_button{
+    justify-content: space-around!important;
+  }
     .heads nav .right_bx ul {
         position: absolute;
         width: 320px;
@@ -133,6 +140,7 @@
     }
     .home {
         width: 98%;
+        margin: auto;
     }
     .home .home_bx {
         width: 100%;

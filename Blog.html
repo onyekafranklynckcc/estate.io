@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.0/mdb.min.css" rel="stylesheet" />
+  <!---swiper-->
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+  />
+<!-- costum css -->
+<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="./media.css">
+<!-- aos -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<!-- MDB -->
+
+<script
+type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.0/mdb.min.js"
+></script>
+  <title>Real Estate</title>
+  
+  <title>Document</title>
+</head>
+
+<body class="blog-page">
+  <header class="header">
+    <div class="">
+      <!--boootstrap nav-->
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><span class="color-primary">R.</span> estate</a>
+          <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="./About.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Sales</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Lettings</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./Blog.html">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./Projects .html">Projects</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+              <li class="nav-item">
+                <button class="btn btn-theme lower" onclick="openn()">Get started</button>
+              </li>
+              <li class="nav-item">
+                <button class="btn btn-themee" onclick="opennn()">Get started</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!--boootstrap nav-->
+    </div>
+  </header>
+
+  <section class="blog-about about">
+    <div class="container">
+        <div class="image"data-aos="fade-right"  data-aos-duration="300">
+            <img src="./img/bg2.jpg" class="blog-img" width="" class="image
+        " alt="">
+    </div>
+    <h6 class="h6 color-primary my-2 btn btn-theme">FOR SALE</h6>
+          <h3 class="my-5">port hacourt</h3>
+          <div class="blog-item d-flex">
+              <span>5</span>
+            <i class="fas fa-bed mx-3 align-self-center"></i>
+            <span>3</span>
+            <i class="fas fa-bath mx-2 "></i>
+          </div>
+     
+    <div class="col my-5" data-aos="fade-up"  data-aos-duration="300">
+      <h1 class="h1 h1-responsive mb-4  t">We Provide The Best Property For you!</h1>
+      <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure molestiae facilis vero eaque soluta <br>
+        assumenda reiciendis placeat eveniet, quas maiores iste distinctio illo quia alias voluptas dignissimos
+        porro
+      <p> "EXPERIENCE LUXURIOUS LAKE LIVING IN THIS EXQUISITE LAKE FRONT CUSTOM HOME AT REYNOLDS LAKE OCONEE" This home boasts over 11,000 sq ft of pure elegance & high-end details. No expense was spared during construction and no detail was overlooked by architect Barry Light and premier builder Jones and Jones. As you drive down the meandering driveway, take in the stunning views & incredible landscape of your very own paradise. Privacy is paramount in this lakefront home, allowing you to enjoy your slice of heaven in peace & tranquility. As you step into the foyer, prepare to be greeted by the stunning 2-story living room, hand-painted high ceilings, beautiful chandeliers, balconies & lake views.Sprawling covered porch offers unobstructed views of the backyard & water. </p>
+      <button class="btn btn-theme buy">Buy Now</button>
+      <button class=" btn btn-play">
+        <i class="bi bi-caret-right-fill"></i>
+      </button>
+
+    </div>
+    </div>
+  </section>
+
+  <section class="schedule">
+    <div class="container">
+        <h1>
+            Schedule A Meeting
+        </h1>
+        <div class="meeting">
+            <div class="meet">
+                <span class="btn-theme"> <i class="fas fa-person "></i>In Person</span> 
+                <span class="btn-theme">  <i class="fas fa-video"></i>Videochat</span> 
+            </div>
+        </div>
+        
+    </div>
+  </section>
+
+
+  <span class="bg-blur">  </span> 
+  <div class=" contact-form">
+    <div class="formcont">
+      <div class="formbtn">
+          <span onclick="login()">
+              LOG IN
+          </span>
+          <span  onclick="register()">
+              REGISTER
+          </span>
+          <hr id="indicator">
+      </div>
+      <form action="" id="log">
+          <input type="text" placeholder="username">
+          <input type="password" placeholder="password">
+          <button type="submit" class="btn">Log in</button>
+          <br>
+          <a href=""> Forgot password</a>
+      </form>
+      <form action="" id="reg">
+          <input type="text" placeholder="username">
+          <input type="email" placeholder="email">
+          <input type="password" placeholder="password">
+          <button type="submit" class="btn">register</button>
+        
+      </form>
+    </div>
+  </div>
+
+
+
+
+
+
+  <!--smaller screen-->
+
+
+<span class="bg-blurr"></span>
+  <div class=" contact-form">
+    <div class="form-cont">
+      <div class="form-btn">
+          <span onclick="loginn()">
+              LOG IN
+          </span>
+          <span  onclick="registerr()">
+              REGISTER
+          </span>
+          <hr id="indicatorr">
+      </div>
+      <form action="" id="logg">
+          <input type="text" placeholder="username">
+          <input type="password" placeholder="password">
+          <button type="submit" class="btn">Log in</button>
+          <br>
+          <a href=""> Forgot password</a>
+      </form>
+      <form action="" id="regg">
+          <input type="text" placeholder="username">
+          <input type="email" placeholder="email">
+          <input type="password" placeholder="password">
+          <button type="submit" class="btn">register</button>
+         
+      </form>
+    </div>
+  </div>
+
+
+
+  <section class="property-section ">
+    <div class="container ">
+      <h6 class="h6 color-primary m-0">Recents</h6>
+      <h1 class="h1 h1-responsive mb-4">Recently Added properties!</h1>
+      <div class="text-right">
+        <button class="btn btn-theme buy"><a href="">Find More Projects </a></button>
+      </div>
+
+      <div class="property-slider">
+
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide" data-aos="fade-right"  data-aos-duration="300">
+              <div class="property-list shadow">
+                <div class="image">
+                  <img src="./img/bg3.jpeg" alt="">
+                </div>
+                <div class="text-right">
+                  <h4 class="h5">262535</h4>
+                </div>
+                <div class="d-flex justify-content-between mb-4">
+                  <div class="item">
+                    <h4 class="m-0">places</h4>
+                    <p class="m-0">city,country</p>
+                  </div>
+                  <div class="item d-flex align-self-center">
+                    <i class="fas fa-bed mx-3 align-self-center"></i>
+                    <span>5</span>
+                    <i class="fas fa-bath mx-3 align-self-center"></i>
+                    <span>3</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide" data-aos="fade-right"  data-aos-duration="600">
+              <div class="property-list shadow">
+                <div class="image">
+                  <img src="./img/bg3.jpeg" alt="">
+                </div>
+                <div class="text-right">
+                  <h4 class="h5">262535</h4>
+                </div>
+                <div class="d-flex justify-content-between mb-4">
+                  <div class="item">
+                    <h4 class="m-0">places</h4>
+                    <p class="m-0">city,country</p>
+                  </div>
+                  <div class="item d-flex align-self-center">
+                    <i class="fas fa-bed mx-3 align-self-center"></i>
+                    <span>5</span>
+                    <i class="fas fa-bath mx-3 align-self-center"></i>
+                    <span>3</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="property-list shadow">
+                <div class="image">
+                  <img src="./img/Incredible Luxury House.jpg" alt="">
+                </div>
+                <div class="text-right">
+                  <h4 class="h5">262535</h4>
+                </div>
+                <div class="d-flex justify-content-between mb-4">
+                  <div class="item">
+                    <h4 class="m-0">places</h4>
+                    <p class="m-0">city,country</p>
+                  </div>
+                  <div class="item d-flex align-self-center">
+                    <i class="fas fa-bed mx-3 align-self-center"></i>
+                    <span>5</span>
+                    <i class="fas fa-bath mx-3 align-self-center"></i>
+                    <span>3</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="property-list shadow">
+                <div class="image">
+                  <img src="./img/317e7c5f5d69514a14d0168bdf266a7f.jpg" alt="">
+                </div>
+                <div class="text-right">
+                  <h4 class="h5">262535</h4>
+                </div>
+                <div class="d-flex justify-content-between mb-4">
+                  <div class="item">
+                    <h4 class="m-0">places</h4>
+                    <p class="m-0">city,country</p>
+                  </div>
+                  <div class="item d-flex align-self-center">
+                    <i class="fas fa-bed mx-3 align-self-center"></i>
+                    <span>5</span>
+                    <i class="fas fa-bath mx-3 align-self-center"></i>
+                    <span>3</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="property-list shadow">
+                <div class="image">
+                  <img src="./img/Random Inspiration 335.jpg" alt="">
+                </div>
+                <div class="text-right">
+                  <h4 class="h5">262535</h4>
+                </div>
+                <div class="d-flex justify-content-between mb-4">
+                  <div class="item">
+                    <h4 class="m-0">places</h4>
+                    <p class="m-0">city,country</p>
+                  </div>
+                  <div class="item d-flex align-self-center">
+                    <i class="fas fa-bed mx-3 align-self-center"></i>
+                    <span>5</span>
+                    <i class="fas fa-bath mx-3 align-self-center"></i>
+                    <span>3</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="property-list shadow">
+                <div class="image">
+                  <img src="./img/An outdoor pool.jpg" alt="">
+                </div>
+                <div class="text-right">
+                  <h4 class="h5">262535</h4>
+                </div>
+                <div class="d-flex justify-content-between mb-4">
+                  <div class="item">
+                    <h4 class="m-0">places</h4>
+                    <p class="m-0">city,country</p>
+                  </div>
+                  <div class="item d-flex align-self-center">
+                    <i class="fas fa-bed mx-3 align-self-center"></i>
+                    <span>5</span>
+                    <i class="fas fa-bath mx-3 align-self-center"></i>
+                    <span>3</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide" data-aos="fade-right"  data-aos-duration="600">
+              <div class="property-list shadow">
+                <div class="image">
+                  <img src="./img/bg.png" alt="">
+                </div>
+                <div class="text-right">
+                  <h4 class="h5">262535</h4>
+                </div>
+                <div class="d-flex justify-content-between mb-4">
+                  <div class="item">
+                    <h4 class="m-0">places</h4>
+                    <p class="m-0">city,country</p>
+                  </div>
+                  <div class="item d-flex align-self-center">
+                    <i class="fas fa-bed mx-3 align-self-center"></i>
+                    <span>5</span>
+                    <i class="fas fa-bath mx-3 align-self-center"></i>
+                    <span>3</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide" data-aos="fade-right"  data-aos-duration="300">
+              <div class="property-list shadow">
+                <div class="image">
+                  <img src="./img/bg2.jpg" alt="">
+                </div>
+                <div class="text-right">
+                  <h4 class="h5">262535</h4>
+                </div>
+                <div class="d-flex justify-content-between mb-4">
+                  <div class="item">
+                    <h4 class="m-0">places</h4>
+                    <p class="m-0">city,country</p>
+                  </div>
+                  <div class="item d-flex align-self-center">
+                    <i class="fas fa-bed mx-3 align-self-center"></i>
+                    <span>5</span>
+                    <i class="fas fa-bath mx-3 align-self-center"></i>
+                    <span>3</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+  <section class="mail-section">
+
+    <div class="container">
+      <h1 class="h1 h1-responsive mb-4">Have Any Questions In Mind?</h1>
+      <h4>Let Us Help You.</h4>
+    </div>
+    <div class="  form shadow">
+      <div class="">
+        <div class=" my-auto">
+          <input type="text" class=" form-control "  placeholder="your mail@domain.com">
+        </div>
+      </div>
+    </div>
+    <div class=" text-right">
+      <button class="btn btn-theme btn-feature buy">Send</button>
+    </div>
+  </section>
+
+<section class="footer">
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-md-2 my-md-auto my-4">
+        <h4 class="h3"> R.estate</h4>
+      </div>
+      
+      <div class="col-md-2 my-md-auto my-4">
+        <h6> Acess </h6>
+        <center><hr></center>
+        <ul>
+         
+          <li><a href="">Architecture</a></li>
+          <li><a href="">Agency</a></li>
+          <li><a href="">Asset Voluation</a></li>
+          <li><a href="">Building</a></li>
+          <li><a href="">Business Rates</a></li>
+        </ul>
+      </div>
+      <div class="col-md-2 my-md-auto my-4">
+        
+        <h6>Locatiion</h6>
+        <center><hr></center>
+        <ul>
+          <li><a href="">Architecture</a></li>
+          <li><a href="">Agency</a></li>
+          <li><a href="">Asset Voluation</a></li>
+          <li><a href="">Building</a></li>
+          <li><a href="">Business Rates</a></li>
+        </ul>
+      </div>
+      <div class="col-md-2 my-md-auto my-4">
+        
+        <h6>services</h6>
+        <center><hr></center>
+        <ul>
+          <li><a href="">Architecture</a></li>
+          <li><a href="">Agency</a></li>
+          <li><a href="">Asset Voluation</a></li>
+          <li><a href="">Building</a></li>
+          <li><a href="">Business Rates</a></li>
+        </ul>
+      </div>
+      <div class="col-md-2"> 
+        
+        <h6>contact</h6>
+       <center><hr></center>
+        <ul>
+          <li>+2349158577010</li>
+          <li>nazabeta@gmail.com</li>
+         
+        </ul>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+
+
+
+<script src="./script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper('.swiper', {
+      // Optional parameters
+
+
+      loop: true,
+      slidesPerView: 1.5,
+      spaceBetween: 30,
+      centeredSlides: true,
+      breakpoints: {
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 30,
+        },
+      }
+    })
+
+   
+   
+  </script>
+
+</body>
+
+</html>
