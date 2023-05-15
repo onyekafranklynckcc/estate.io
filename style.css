@@ -68,14 +68,14 @@ body{
     align-items: center;
     margin: auto;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .home .home_bx .piece {
     position: relative;
     width: 180px;
     height: 260px;
-    margin-top: 10px;
+    margin-top: 30px;
     border-radius: 15px;
     /* border: 1px solid #000; */
 }
@@ -1218,7 +1218,7 @@ letter-spacing: 2px;
 
 
  .blog-img{
-    height: 700px!important;
+    height: 600px!important;
  }
 
 
@@ -1617,4 +1617,14 @@ margin-left: 800px;
     flex-wrap: wrap!important;
     justify-content: flex-start!important;
     min-width: 200px;
+}
+
+.btn-search{
+    color: white;
+    background-color: var(--color-primary);
+    border: 1px solid wheat;
+}
+.project-work
+{
+    padding-top: 200px;
 }

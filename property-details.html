@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
- 
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,6 +21,11 @@
 <link rel="stylesheet" href="./media.css">
 <!-- aos -->
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
+
+<link rel="stylesheet" href="/bower_components/owl.carousel/dist/assets/owl.carousel.min.css" />
+
+
 <!-- MDB -->
 
 <script
@@ -32,10 +37,9 @@ src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.0/mdb.min.js"
   <title>Document</title>
 </head>
 
-<body>
-  <header class="header" >
+<body class="blog-page">
+  <header class="header">
     <div class="">
-
       <!--boootstrap nav-->
 
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -47,24 +51,28 @@ src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.0/mdb.min.js"
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="./About.html">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Sales</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Lettings</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./Blog.html">Blog</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./Projects .html">Projects</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                  </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sales</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link ">Lettings</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link ">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link ">contact</a>
+              </li>
               <li class="nav-item">
                 <button class="btn btn-theme lower" onclick="openn()">Get started</button>
               </li>
@@ -79,10 +87,54 @@ src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.0/mdb.min.js"
     </div>
   </header>
 
+  <section class="blog-about about">
+    
+    <div class="container">
+        <div class="image"data-aos="fade-right"  data-aos-duration="300">
+            <img src="./img/bg2.jpg" class="blog-img" width="" class="image
+        " alt="">
+    </div>
+    <h6 class="h6 color-primary my-2 btn btn-theme">FOR SALE</h6>
+          <h3 class="my-5">port hacourt</h3>
+          <div class="blog-item d-flex">
+              <span>5</span>
+            <i class="fas fa-bed mx-3 align-self-center"></i>
+            <span>3</span>
+            <i class="fas fa-bath mx-2 "></i>
+          </div>
+     
+    <div class="col my-5" data-aos="fade-up"  data-aos-duration="300">
+      <h1 class="h1 h1-responsive mb-4  t">We Provide The Best Property For you!</h1>
+      <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure molestiae facilis vero eaque soluta <br>
+        assumenda reiciendis placeat eveniet, quas maiores iste distinctio illo quia alias voluptas dignissimos
+        porro
+      <p> "EXPERIENCE LUXURIOUS LAKE LIVING IN THIS EXQUISITE LAKE FRONT CUSTOM HOME AT REYNOLDS LAKE OCONEE" This home boasts over 11,000 sq ft of pure elegance & high-end details. No expense was spared during construction and no detail was overlooked by architect Barry Light and premier builder Jones and Jones. As you drive down the meandering driveway, take in the stunning views & incredible landscape of your very own paradise. Privacy is paramount in this lakefront home, allowing you to enjoy your slice of heaven in peace & tranquility. As you step into the foyer, prepare to be greeted by the stunning 2-story living room, hand-painted high ceilings, beautiful chandeliers, balconies & lake views.Sprawling covered porch offers unobstructed views of the backyard & water. </p>
+      <button class="btn btn-theme buy">Buy Now</button>
+      <button class=" btn btn-play">
+        <i class="bi bi-caret-right-fill"></i>
+      </button>
+
+    </div>
+    </div>
+  </section>
+
+  <section class="schedule">
+    <div class="container">
+        <h1>
+            Schedule A Meeting
+        </h1>
+        <div class="meeting">
+            <div class="meet">
+                <span class="btn-theme"> <i class="fas fa-person "></i>In Person</span> 
+                <span class="btn-theme">  <i class="fas fa-video"></i>Videochat</span> 
+            </div>
+        </div>
+        
+    </div>
+  </section>
 
 
-
- <span class="bg-blur">  </span> 
+  <span class="bg-blur">  </span> 
   <div class=" contact-form">
     <div class="formcont">
       <div class="formbtn">
@@ -148,85 +200,16 @@ src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.0/mdb.min.js"
     </div>
   </div>
 
-  
-
-  <section class="about about-about">
-    
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="image"data-aos="fade-right"  data-aos-duration="300">
-            <img src="./img/Polish_20230324_051412772.png" class="image
-        " alt="">
-          </div>
-        </div>
-        <div class="col-md-5 pl-md-5 px-4 mt-md-0 mt-5" data-aos="fade-up"  data-aos-duration="300">
-          <h6 class="h6 color-primary m-0">About Isaac Ukwe</h6>
-          <h1 class="h1 h1-responsive mb-4">Realtor's, Founding Principal</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure molestiae facilis vero eaque soluta <br>
-            assumenda reiciendis placeat eveniet, quas maiores iste distinctio illo quia alias voluptas dignissimos
-            porro
-          <p> reprehenderit ullam libero! Quia, officia hic? Id eum excepturi at possimus, sequi explicabo quisquam.
-            Dignissimos eveniet placeat eaque non odit aspernatur similique!</p>
-         
-         <div class="wrap">
-               <button class="btn btn-theme buy my-2">Contact Us</button>
-          <ul class=" socials d-flex">
-            <li><i class="fa-brands fa-instagram"></i></li>
-            <li><i class="fa-brands fa-linkedin"></i></li>
-            <li><i class="fa-brands fa-twitter"></i></li>
-            <li><i class="fa-brands fa-facebook"></i></li>
-            <li><i class="fa-brands fa-instagram"></i></li>
-          </ul>
-            
-        </div>
-          
-
-        </div>
-      </div>
-    </div>
-  </section>
 
 
-
-  <section class="services about-services ">
-    <div >
-        <h6 class="h6 color-primary m-0 centerr">journey</h6>
-        <h1 class="h1 h1-responsive mb-4 centerr">How It Works!</h1>
-      <div class="d-flex ">
-        <div class=" shadow service-show" data-aos="fade-up"  data-aos-duration="300">
-          <i class="fa-solid fa-user"></i>
-          <h4 class="h5">Make Your Dream True</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-        </div>
-        <div class=" shadow service-show" data-aos="fade-up"  data-aos-duration="300">
-          <i class="fa-solid fa-desktop"></i>
-          <h4 class="h5">Start Your Membership</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. RLorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-        <div class=" shadow service-show" data-aos="fade-up"  data-aos-duration="300">
-          <i class="fa-solid fa-house-chimney"></i>
-          <h4 class="h5">Enjoy Your New Home</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. R Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-
-
-      </div>
-    </div>
-  </section>
-  
-
-
-
- 
-  <section class="feature-section">
-    <div class="container">
+  <section class="property-section ">
+    <div class="container ">
       <h6 class="h6 color-primary m-0">Recents</h6>
-      <h1 class="h1 h1-responsive mb-4">Our Featured properties!</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam minima inventore suscipit nam explicabo
-        officia debitis facilis optio, quaerat voluptas minus iusto ea voluptatibus maiores quos necessitatibus ratione
-        non fugit!</p>
-      <br>
+      <h1 class="h1 h1-responsive mb-4">Related properties!</h1>
+      <div class="text-right">
+        <button class="btn btn-theme buy"><a href="">Find More Projects </a></button>
+      </div>
+
       <div class="property-slider">
 
         <!-- Slider main container -->
@@ -234,7 +217,7 @@ src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.0/mdb.min.js"
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-aos="fade-right"  data-aos-duration="300">
               <div class="property-list shadow">
                 <div class="image">
                   <img src="./img/bg3.jpeg" alt="">
@@ -256,7 +239,7 @@ src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.0/mdb.min.js"
                 </div>
               </div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-aos="fade-right"  data-aos-duration="600">
               <div class="property-list shadow">
                 <div class="image">
                   <img src="./img/bg3.jpeg" alt="">
@@ -366,7 +349,7 @@ src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.0/mdb.min.js"
                 </div>
               </div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-aos="fade-right"  data-aos-duration="600">
               <div class="property-list shadow">
                 <div class="image">
                   <img src="./img/bg.png" alt="">
@@ -388,7 +371,7 @@ src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.0/mdb.min.js"
                 </div>
               </div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-aos="fade-right"  data-aos-duration="300">
               <div class="property-list shadow">
                 <div class="image">
                   <img src="./img/bg2.jpg" alt="">
@@ -411,7 +394,7 @@ src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.0/mdb.min.js"
               </div>
             </div>
 
-            
+
           </div>
 
         </div>
@@ -419,39 +402,6 @@ src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.0/mdb.min.js"
     </div>
   </section>
 
-
-  <section class="work-section work-section-about">
-    <div class="container">
-      <h6 class="h6 color-primary m-0">About</h6>
-      <h1 class="h1 h1-responsive mb-4">About Us</h1>
-      <p> </p>
-      <div class="d-flex justify-content-between">
-
-        <div class=" service-show">
-          <i class="fa-solid fa-search"></i>
-          <h4 class="h5 mb-46">profiile</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. R sit amet consectetur adipisicing elit.</p>
-        </div>
-        <div class=" service-show">
-          <i class="fa-solid fa-people-carry"></i>
-          <h4 class="h5 mb-4">mission</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. R sit amet consectetur adipisicing elit.</p>
-        </div>
-        <div class=" service-show">
-          <i class="fa-solid fa-shield"></i>
-          <h4 class="h5 mb-4">branch network</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. R sit amet consectetur adipisicing elit.</p>
-        </div>
-
-
-      </div>
-    </div>
-  </section>
-
-
-
-
- 
 
 
 
@@ -539,6 +489,8 @@ src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.0/mdb.min.js"
 
 
 <script src="./script.js"></script>
+<script src="/node_modules/jquery/dist/jquery.js"></script>
+<script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init();
