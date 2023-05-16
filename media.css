@@ -19,7 +19,7 @@
     }
  
     .home {
-        height: auto;
+     margin-top: 0px;  
     }
     .home .home_bx {
         flex-wrap: wrap;
@@ -42,7 +42,7 @@
 
 @media screen and (max-width: 767px) {
     .heads {
-        overflow: hidden;
+        overflow: auto;
     }
     .heads .context .cont_bx h1 {
         color: #fff;
@@ -161,9 +161,9 @@
     .heads .content .choose_bx .select .card {
        
         align-items: center;
-        justify-content: center;
+        justify-content:center;
         margin: auto;
-        overflow: hidden;
+      
     }
 
 }

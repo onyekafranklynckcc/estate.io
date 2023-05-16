@@ -74,7 +74,7 @@ function loginn(){
     regg.style.transform = "translateX(300px)"
     logg.style.transform = "translateX(300px)"
     indicatorr.style.transform = "translateX(00px)"
-}
+};
 
 var firstIndex=0;
 
@@ -82,7 +82,7 @@ function automaticSlide(){
 
 setTimeout(automaticSlide, 2000); var pics;
 
-const img=document.querySelectorAll('.auto-slide');
+const img=document.querySelectorAll('.auto-slide, .blog-img');
 
 for(pics=0; pics<img.length;pics++){ img[pics].style.display="none";
 

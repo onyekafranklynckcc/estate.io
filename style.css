@@ -25,9 +25,9 @@ html {
 }
 
 .home {
-    position: relative;
+    
     width: 65%;
-   padding-top: -30px;
+   
     margin: auto;
     /* border: 1px solid #000; */
    
@@ -182,14 +182,13 @@ body{
 
 .heads {
     width: 65%;
-    height: 85vh;
+    height: 700px;
     /* border: 1px solid #000; */
     margin: auto;
     padding-top: 80px;
        display: flex;
     align-items: center;
-   padding-left: 25px!important;
-   padding-right: 25px!important;
+  
     justify-content: center;
     flex-wrap: wrap;
     transition: .3s linear;
@@ -273,15 +272,16 @@ body{
     position: relative;
     width: 100%;
     height: 100%;
+    overflow: hidden;
     /* border: 1px solid #000; */
     z-index: 5;
-    padding-bottom: 200px!important;
+    
 }
 
 
 .heads .content .cont_bx {
     width: 500px;
-    height: auto;
+   
     color: #000;
     padding: 50px;
     /* border: 1px solid #000; */
@@ -345,6 +345,7 @@ body{
     width: 100%;
     height: 50px;
     margin: auto;
+   
     margin-top: 10px;
     background: rgb(237, 237, 237, .3);
     padding: 5px;
@@ -370,6 +371,8 @@ body{
     position: relative;
     width: 90%;
     height: auto;
+    padding-top: 100px!important;
+    
     margin: auto;
     /* border: 1px solid #000; */
 }
@@ -426,7 +429,7 @@ body{
 .heads .content .choose_bx .select .card {
     width: 26%;
     height: 50%;
-    border: 2px solid rgb(226, 226, 226, .7);
+    border: 1px solid  var(--color-primary);
     border-radius: 10px;
     box-shadow: 15px 10px 15px -10px rgb(103, 102, 102);
     align-items: center;
@@ -598,6 +601,19 @@ swiper-container {
         color: white;
         padding: 10px 20px;
         border-radius: 30px 0 30px 30px;
+    }
+    .btn-theeme{
+        box-shadow: none;
+        margin: 0;
+        align-self:flex-start;
+        font-size: 15px;
+        font-weight: 500;
+        
+        text-transform: capitalize;
+        background-color: var(--color-primary);
+        color: white;
+        padding: 10px 20px;
+        border-radius: 0px 30px 30px 30px;
     }
     .btn-theme:hover{
         background-color: var(--color-acent);
@@ -867,7 +883,7 @@ padding: 120px 0;
     margin: auto;
     padding: 0!important;
    margin: 0!important;
-margin-left: 90px;
+
 
    justify-content: center;
 }
@@ -885,7 +901,7 @@ margin-left: 90px;
     text-align: center;
     border-radius: 0px 30px 0px 30px ;
     margin: 10px;
-    margin-left: 40px;
+    
     background-color: white;
 }
 .services .service-show i{
@@ -996,7 +1012,7 @@ border: none;
     padding: 20px 30px;
     text-align: center;
     border-radius: 0px 30px 0px 30px ;
-    margin: 10px;
+
     padding-left: 40px!important;
     cursor: pointer;
     background-color: rgb(255, 252, 252);
@@ -1222,7 +1238,9 @@ letter-spacing: 2px;
 
 
  .blog-img{
-    height: 600px!important;
+    height: 550px!important;
+    width: 100% !important ;
+    border-radius: 50px 50px 50px 50px !important;
  }
 
 
@@ -1274,9 +1292,7 @@ letter-spacing: 2px;
     .services .d-flex{
         flex-direction: column;
     }
-    .service-show{
-        max-width: 350px;
-    }
+   
 
      /*work-section*/
      .work-section .d-flex{
@@ -1454,6 +1470,7 @@ letter-spacing: 2px;
      }
      .blog-img{
         height: 300px!important;
+        border-radius: 50px 50px 50px 50px !important;
      }
      .blog-page .about{
         margin-top: 0px;
@@ -1461,6 +1478,7 @@ letter-spacing: 2px;
 
      .about-select{
         display: flex;
+       
         justify-content: center!important;
      }
     
@@ -1480,7 +1498,7 @@ letter-spacing: 2px;
       
         cursor: pointer;
         border: 1px solid gray;
-     width: 70px!important;
+     width: 75px!important;
      padding:  10px 0px 10px 0px!important;
      display: flex;
      margin-top: 5px;
@@ -1502,10 +1520,40 @@ letter-spacing: 2px;
         flex-wrap: wrap;
         top: 80px;
        object-fit: cover;
-        width: 350px!important;
+        width: 95%!important;
         border-radius: 30px;
         height: 500px;
     }
+      #social{
+        list-style-type: none;
+       
+       
+        display: flex;
+        justify-content: flex-start !important;
+        align-items:flex-start;
+        flex-direction: column;
+      
+     
+      }
+      #social li{
+      display: flex;
+      margin-top: -10px;
+      }
+      #social li h6{
+        text-align: center;
+        margin-left: 10px;
+        padding-top: 4px;
+      }
+      #social i{
+        font-size: 20px;
+      
+        background-color: white !important;
+        padding: 10px;
+        border-radius: 50%;
+        cursor: pointer;
+        color: var(--color-primary) !important;
+        
+      }
 
     
   }
@@ -1515,7 +1563,7 @@ letter-spacing: 2px;
   font-size: 20px;
   }
   .blog-about .btn{
-    margin-top: -500px;
+    padding-top: -600px;
     margin-bottom: -40px!important;
   }
   .house-name{
@@ -1527,12 +1575,16 @@ letter-spacing: 2px;
 
   .schedule .container{
    display: grid;
-   margin-top: -80px!important;
-    justify-content: start;
+   margin-top: -100px!important;
+    justify-content: center;
     
   }
 
   .meet{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    justify-content: space-evenly;
     margin-top: 10px!important;
   }
   .meet span i{
@@ -1541,7 +1593,7 @@ letter-spacing: 2px;
 
 
   .swiper-slide .blog-img{
-margin-left: 800px;
+
    width: 900px;
   }
   .swiper-slide .imagee{
@@ -1590,14 +1642,16 @@ margin-left: 800px;
   }
 .card{
     min-height: 60px;
-    font-weight: 900;
+    font-weight: 400;
+    background-color: rgb(240, 239, 239);
+    border: 1px solid var(--color-primary);
     
    
 }
 .card button{
-    font-weight: 900;
-    background-color: white;
-   
+    font-weight: 400;
+    background-color:  rgb(240, 239, 239);
+  
     border: none;
 }
 .dbl-card{
@@ -1609,7 +1663,7 @@ margin-left: 800px;
     width: 120px;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
+
 }
 .select-card{
    
@@ -1638,6 +1692,8 @@ margin-left: 800px;
     justify-content:center!important;
     min-width: 200px;
     display: inline-flex !important;
+    box-shadow: 15px 10px 15px -10px rgb(103, 102, 102)!important
+    ;
 }
 
 .btn-search{
@@ -1653,7 +1709,7 @@ margin-left: 800px;
     color: white;
     background-color: var(--color-primary);
     border: 1px solid wheat;
-    padding:  15px 20px 15px 20px !important;
+    padding:  15px 15x 15px 15px !important;
     margin-top: 5px;
 }
 .auto-slide{
@@ -1663,9 +1719,219 @@ margin-left: 800px;
     text-align: center;
     justify-content: center;
     flex-wrap: wrap;
-    top: 100;
+    top:80px;
    object-fit: cover;
     width: 950px;
     border-radius: 30px;
     height: 500px;
+   
+   
+   
+    background: var(--background);
+    background-position-y: 0px;
+    transform: scaleX(-1);
+    border-radius: 20px;
+    z-index: -1;
 }
+.about-about {
+    text-align: center!important;
+}
+.mission-s .service-show{
+min-height:200px ;
+}
+.team{
+    height: 300px!important;
+}
+
+.branch-n{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+.branch-n .service-show{
+ border-radius: 30px;
+}
+
+
+.about-services>*{
+   text-align: center !important;
+}
+.blog-about .imager{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  
+    
+}
+
+
+.property-section .property-slider{
+    height: 500px;
+    width: 100%;
+    
+    margin-top:  50px;
+    border: none;
+    
+    
+    }
+    .property-slider .swwiper{
+        width: 100%;
+        height: 100%;
+       
+        
+      }
+      
+    .property-slider .swwiper .swwiper-slide .property-list{
+      border-radius: 0px 30px 0px 30px;
+        padding: 10px;
+        
+        background-color: white;
+     
+      }
+      .property-slider .swwiper .swwiper-slide .property-list .image img{
+        width: 2px!important;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 0px 30px 0px 30px;
+        overflow: hidden;
+        margin-bottom: 10px;
+        color: #000000;
+     
+      }
+      .property-slider .swwiper .swwiper-slide .property-list p{
+       font-weight: 500 ;
+     
+      }
+    .property-slider .swwiper .swwiper-slide .property-list .image{
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+        object-fit: cover;
+        margin-bottom: 10px;
+        border-radius:0px 30px 0px 30px;
+     
+      }
+    .property-list .text-right h4{
+        text-align: right;
+    }
+    .blg-p{
+
+        width: 320px;
+        height:300px;
+        border-radius: 30px 0px 30px 0px;
+        padding: 10px 10px 10px 10px;
+    }
+    .swwiper-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+    }
+
+    .swwiper-slide{
+        margin-top: -30px;
+        width: 360px !important;
+        height: 500px !important;
+       cursor: pointer;
+       padding: 10px  10px  10px  10px;
+       
+      }
+      .property-list{
+       
+        border-radius: 30px 0px 30px 0px;
+        padding: 10px !important;
+        flex-wrap: wrap ;
+      }
+      .intro hr{
+        margin-top: -6px;
+       
+      }
+      .admin {
+        margin-top: -10px;
+      }
+      .intro h6{
+text-align: left;
+margin-left: 5px;
+font-size: 17px;
+
+      }
+
+      .n-form{
+        display: flex;
+        text-align: center;
+        align-items: center;
+     
+        justify-content: center;
+        
+      }
+      #social{
+        list-style-type: none;
+        margin: auto;
+       
+        display: flex;
+        justify-content: space-evenly;
+     
+      }
+      #social i{
+        font-size: 20px;
+      
+        background-color: var(--color-primary);
+        padding: 10px;
+        border-radius: 50%;
+        cursor: pointer;
+        color: white;
+        
+      }
+      #social li{
+        text-align: center;
+        margin-top: 10px;
+      }
+      #social li h6{
+        text-align: center;
+        margin-top: 10px;
+      }
+      .names{
+      justify-content: space-between;
+      }
+      .names input{
+        padding: 10px 20px;
+      border-radius: 10px;
+        width: 150px;
+        border: 1px solid var(--color-primary);
+
+      }
+      .c-form{
+        display: block;
+        justify-content: flex-end;
+        border: 0.1px solid gray;
+        border-radius: 30px 0px 30px 30px;
+        padding: 20px;
+      }
+      textarea{
+        width: 310px;
+        background-color: rgb(236, 236, 236);
+        height: 100px;
+        margin-top: 5px;
+       border: 1px solid var(--color-primary);
+        border-radius: 10px;
+        padding: 10px 20px;
+      }
+      .mail{
+        display: block;
+        
+      }
+      .e-mail input{
+        width: 310px;
+        padding: 10px 20px;
+        margin-top: 5px;
+        border-radius: 10px;
+        
+      }
+      .form-b{
+        margin-left: 230px;
+      }
+      .hand-out{
+        margin-top: 20px;
+       
+
+      }
