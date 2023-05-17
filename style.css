@@ -426,6 +426,9 @@ position: absolute;
 
    
   }
+  .about .content{
+margin-top: -200px;
+  }
 
   .slider-image.acctive {
     opacity: 1;
