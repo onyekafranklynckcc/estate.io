@@ -80,9 +80,9 @@ var firstIndex=0;
 
 function automaticSlide(){
 
-setTimeout(automaticSlide, 2000); var pics;
+setTimeout(automaticSlide, 2500); var pics;
 
-const img=document.querySelectorAll('.auto-slide, .blog-img');
+const img=document.querySelectorAll('.blog-img');
 
 for(pics=0; pics<img.length;pics++){ img[pics].style.display="none";
 
@@ -97,3 +97,42 @@ if(firstIndex > img.length) { firstIndex =1;
 img[firstIndex -1].style.display="block";
 
 } automaticSlide();
+var right = document.getElementsByClassName(".a-rght")
+
+
+
+
+
+function next(){
+   
+        right.style.display="block"
+     
+     
+}
+
+
+ var images = document.querySelectorAll('.slider-image');
+    var currentImageIndex = 0;
+
+    function showImage(index) {
+      if (index < 0) {
+        index = images.length - 1;
+      } else if (index >= images.length) {
+        index = 0;
+      }
+
+      for (var i = 0; i < images.length; i++) {
+        images[i].classList.remove('acctive');
+      }
+
+      images[index].classList.add('acctive');
+      currentImageIndex = index;
+    }
+
+    function previousImage() {
+      showImage(currentImageIndex - 1);
+    }
+
+    function nextImage() {
+      showImage(currentImageIndex + 1);
+    }

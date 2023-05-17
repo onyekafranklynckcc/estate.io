@@ -76,6 +76,7 @@ body{
     width: 180px;
     height: 260px;
     margin-top: 30px;
+    overflow: hidden;
     border-radius: 15px;
     /* border: 1px solid #000; */
 }
@@ -83,8 +84,11 @@ body{
 .home .home_bx .piece img {
     width: 100%;
     height: 100%;
-    
+    transition: all 1.1s;
     border-radius: 15px;
+}
+.piece:hover .bng {
+transform: scale(1.2);
 }
 
 .home .home_bx .piece .context {
@@ -403,7 +407,29 @@ body{
     background: #fff;
     color: #000;
 }
+.slider-image {
+   
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+position: absolute;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    top:80px;
+   object-fit: cover;
+   border-radius: 30px;
+    width: 950px;
+    height: 500px;
 
+   
+  }
+
+  .slider-image.acctive {
+    opacity: 1;
+  }
 .heads .content .choose_bx .stay_bx button:nth-last-child(1) {
     border-radius: 0px 10px 0px 0px;
 }
@@ -1724,14 +1750,10 @@ margin-left: 800px;
     width: 950px;
     border-radius: 30px;
     height: 500px;
+    opacity: 0;
    
    
-   
-    background: var(--background);
-    background-position-y: 0px;
-    transform: scaleX(-1);
-    border-radius: 20px;
-    z-index: -1;
+
 }
 .about-about {
     text-align: center!important;
