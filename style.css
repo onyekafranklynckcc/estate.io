@@ -739,7 +739,8 @@ swiper-container {
     .header nav.navbar .navbar-brand{
         font-weight: 500;
         color: var(--color-secondary);
-        font-size: 24px;
+        font-size: 18px;
+        padding-left: -20px !important;
     }
 
     .header nav.navbar .nav-item{
@@ -1543,6 +1544,19 @@ letter-spacing: 2px;
         
         
     }
+    .moving{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        top: 80px;
+       object-fit: cover;
+        width: 95%!important;
+        border-radius: 30px;
+        height: 500px;
+    }
     .auto-slide{
         position: absolute;
         display: flex;
@@ -1743,6 +1757,26 @@ margin-left: 800px;
     border: 1px solid wheat;
     padding:  15px 15x 15px 15px !important;
     margin-top: 5px;
+}
+.polish{
+    width: 40px;
+    padding-right: 10px;
+}
+.moving{
+    position: absolute;
+transform:f;
+    transition: 0.5s ease-in-out;
+position: absolute;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    top:80px;
+   object-fit: cover;
+   border-radius: 30px;
+    width: 950px;
+    height: 500px;
 }
 .auto-slide{
     position: absolute;
