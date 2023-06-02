@@ -23,6 +23,34 @@ html {
 html {
     font-family: 'Nunito', sans-serif;
 }
+.preloader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url(./img/Cube-1s-135px.svg);
+  }
+
+.loader-wrap .layer .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #d8d8d8;
+  }
+  .loader-wrap {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+  }
 
 .home {
     
@@ -400,6 +428,7 @@ transform: scale(1.2);
 .heads .content .choose_bx .stay_bx button:hover {
     background: #fff;
     color: #000;
+    border: 1px solid black;
 }
 
 .heads .content .choose_bx .stay_bx button:nth-child(1) {
@@ -740,7 +769,13 @@ swiper-container {
         font-weight: 500;
         color: var(--color-secondary);
         font-size: 18px;
-        padding-left: -20px !important;
+       
+        padding-top: 20px !important;
+    }
+    .header nav.navbar .navbar-brand .c-name{
+        
+       
+        padding-top: 20px !important;
     }
 
     .header nav.navbar .nav-item{
@@ -876,7 +911,7 @@ padding: 120px 0;
 .about .image img{
     width: 100%;
     height: 400px;
-    object-fit: cover;
+    object-fit: contain;
 }
 .buy{
     border-radius:30px ;
@@ -1718,7 +1753,7 @@ margin-left: 800px;
     appearance: none;
   margin-top: 5px;
     cursor: pointer;
-    border: 1px solid gray;
+    border: 1px solid var(--color-primary);
  width: 120px;
  padding:  10px 20px 10px 20px;
  display: flex;
