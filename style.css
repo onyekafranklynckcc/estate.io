@@ -80,6 +80,9 @@ body{
    justify-content:space-between!important;
 }
 
+.prop-location{
+    color: var(--color-primary);
+}
 .title_button h2{
    
   color: var(--color-primary);
@@ -211,7 +214,7 @@ transform: scale(1.2);
 }
 .room{
     color: white;
-    padding-left: 25px;
+    padding-left: 65px;
     font-size: 13px;
 }
 
@@ -478,8 +481,9 @@ position: absolute;
 margin-top: -200px;
   }
   .features-p{
-    margin-top: -130px;
+    margin-top: -200px !important;
   }
+
 
   .slider-image.acctive {
     opacity: 1;
@@ -785,9 +789,7 @@ swiper-container {
         width: 100%;
         background-color: brown !important;
     }
-    nav{
-        
-    }
+   
     .navbar-toggler{
         margin-top: 30px;
     }
@@ -944,6 +946,9 @@ padding: 120px 0;
     border-radius:30px ;
    box-shadow: 5px 5px 20px var(--color-primary);
  
+}
+.buy a{
+    color: white;
 }
 .about p{
     font-size: 17px;
@@ -1716,10 +1721,13 @@ letter-spacing: 2px;
   .blog-page .property-section{
     margin-top: 80px!important;
   }
-
+.office{
+    padding-top: 10px !important;
+    padding-left: 20px !important;
+}
   .schedule .container{
    display: grid;
-   margin-top: -100px!important;
+   margin-top: -230px!important;
     justify-content: center;
     
   }
@@ -1857,8 +1865,9 @@ margin-left: 800px;
     margin-top: 5px;
 }
 .polish{
-    width: 60px;
+    width: 80px;
     padding-right: 10px;
+    padding-top: 10px !important;
 }
 .moving{
     position: absolute;
