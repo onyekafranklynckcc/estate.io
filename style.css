@@ -977,6 +977,7 @@ padding: 120px 0;
 .service-p{
     margin-top: -10px !important;
     margin-bottom: 40px !important;
+    text-align: center;
 }
 .service-show{
     min-width: 300px !important;
@@ -1634,7 +1635,7 @@ letter-spacing: 2px;
         cursor: pointer;
         border: 1px solid gray;
      width: 75px!important;
-     padding:  10px 0px 10px 0px!important;
+    
      display: flex;
      margin-top: 5px;
      font-size: 12px;
