@@ -64,6 +64,10 @@ html {
    
     z-index: 2;
 }
+.item span{
+  margin-left: -14px !important; 
+  align-self: baseline;
+}
 
 .home .title_button {
     display: flex;
@@ -963,37 +967,35 @@ padding: 120px 0;
     justify-content: center;
 }
 
-.services {
-    margin: 100px 0;
-    
-    
-   
+.sales-service{
+    padding-top: 100px;
 }
-.services{
-  
-   padding: 0!important;
-   margin: 0!important;
+.footer-logo{
+    width: 30%;
 
-   
+}
+.service-p{
+    margin-top: -10px !important;
+    margin-bottom: 40px !important;
 }
 .service-show{
-    max-width: 400px;
+    min-width: 300px !important;
+    max-width: 300px !important;
 }
 .services .d-flex{
+   
     margin: auto;
-    padding: 0!important;
-   margin: 0!important;
-
-
-   justify-content: center;
+  flex-wrap: wrap;
+  display: flex;
+   justify-content: space-evenly     !important;
 }
 
 .services .service-show{
     padding: 20px 30px;
     text-align: center;
     border-radius: 0px 30px 0px 30px ;
-    margin: 10px;
-    margin-left: 40px;
+    margin-bottom: 20px;
+ 
     background-color: white;
 }
 .work-section .service-show{
@@ -1424,10 +1426,7 @@ letter-spacing: 2px;
 
 
     /*service-section*/
-    .services .d-flex{
-        flex-direction: column;
-    }
-   
+ 
 
      /*work-section*/
      .work-section .d-flex{
@@ -1984,6 +1983,12 @@ min-height:200px ;
       }
     .property-list .text-right h4{
         text-align: right;
+    }
+    .footer i{
+        padding-right: 7px;
+    }
+    .footer-location{
+        align-items: flex-start !important;
     }
     .blg-p{
 
