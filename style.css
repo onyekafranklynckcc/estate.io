@@ -190,13 +190,16 @@ transform: scale(1.2);
     margin-left: 3px;
 }
 .location_rx{
-    display: flex;
+    display: none;
     color: white;
     margin-top: 3px;
     margin-left: 3px;
 }
 .location_rx i{
-   font-size: 13px;
+   font-size: 7px;
+}
+.location_tx{
+    font-size: 15px;
 }
 
 
